@@ -16,7 +16,7 @@
 <meta property="og:description" content="第六章程序填空5-1 输入两个正整数，输出它们的最大公约数与最小公倍数。12345678def f(a,b):    x,y&#x3D;a,b    while a%b!&#x3D;0:        a,b&#x3D;b,a%b    return b, x*y&#x2F;bm,n&#x3D;[int(v) for v in input().split()]gcd,lcm&#x3D;f(m,n)">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-05-13T02:54:34.000Z">
-<meta property="article:modified_time" content="2020-05-14T13:19:20.748Z">
+<meta property="article:modified_time" content="2020-05-14T13:31:34.374Z">
 <meta property="article:author" content="ZNing_B">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="给弟弟们">
@@ -212,7 +212,36 @@ Content">ZNing_B</a></h1>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F; 请在这里填写答案 &#x2F;</span><br><span class="line">x &#x3D; input()</span><br><span class="line">change(x)</span><br></pre></td></tr></table></figure>
 <p>输入样例:<br><code>$1</code><br><code>￥1</code><br>输出样例:<br><code>1美元 = 6.71美元</code><br><code>1人民币 = 0.15美元</code><br>代码参考:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">def change(money):</span><br><span class="line">    c &#x3D; money[0]</span><br><span class="line">    k &#x3D; int(money[1:])</span><br><span class="line">    if c &#x3D;&#x3D; &#39;$&#39;:</span><br><span class="line">        return print(&#39;%d美元 &#x3D; %.2f人民币&#39; %(k, k*6.709))</span><br><span class="line">    else:</span><br><span class="line">        return print(&#39;%d人民币 &#x3D; %.2f美元&#39; %(k, k&#x2F;6.709))</span><br></pre></td></tr></table></figure>
-<h6 id="6-8-计算薪资"><a href="#6-8-计算薪资" class="headerlink" title="6-8 计算薪资"></a>6-8 计算薪资</h6><p>某公司销售员底薪为5000，销售业绩与利润提成的关系如下表所示（计量单位：元）编写函数，计算员工月薪.<br>销售业绩(元) | 利润提成比例<br>–|–:<br>sales ≤ 10000|没有提成<br>10000 ≤ sales ≤ 20000|10%<br>20000 ≤ sales ≤ 50000|15%<br>50000 ≤ sales ≤ 100000|20%<br>100000 &lt; sales|25%<br><strong>裁判测试程序样例：</strong><br>输入样例:<br><code>50800</code><br><code>35000</code><br>输出样例:<br><code>15160.00</code><br><code>10250.00</code><br>代码参考:</p>
+<h6 id="6-8-计算薪资"><a href="#6-8-计算薪资" class="headerlink" title="6-8 计算薪资"></a>6-8 计算薪资</h6><p>某公司销售员底薪为5000，销售业绩与利润提成的关系如下表所示（计量单位：元）编写函数，计算员工月薪.</p>
+<table>
+<thead>
+<tr>
+<th>销售业绩(元)</th>
+<th>利润提成比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sales ≤ 10000</td>
+<td>没有提成</td>
+</tr>
+<tr>
+<td>10000 ≤ sales ≤ 20000</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>20000 ≤ sales ≤ 50000</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>50000 ≤ sales ≤ 100000</td>
+<td>20%</td>
+</tr>
+<tr>
+<td>100000 &lt; sales</td>
+<td>25%</td>
+</tr>
+</tbody></table>
+<p><strong>裁判测试程序样例：</strong><br>输入样例:<br><code>50800</code><br><code>35000</code><br>输出样例:<br><code>15160.00</code><br><code>10250.00</code><br>代码参考:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">def bonus(sales):</span><br><span class="line">    if sales &lt;&#x3D; 10000:</span><br><span class="line">        result &#x3D; 5000</span><br><span class="line">    elif 10000 &lt; sales &lt;&#x3D; 20000:</span><br><span class="line">        result &#x3D; 5000 + sales*0.1</span><br><span class="line">    elif 20000 &lt; sales &lt;&#x3D; 50000:</span><br><span class="line">        result &#x3D; 5000 + sales*0.15</span><br><span class="line">    elif 50000 &lt; sales &lt;&#x3D; 100000:</span><br><span class="line">        result &#x3D; 5000 + sales*0.2</span><br><span class="line">    else:</span><br><span class="line">        result &#x3D; 5000 + sales*0.25</span><br><span class="line">    return result</span><br></pre></td></tr></table></figure>
       
 
