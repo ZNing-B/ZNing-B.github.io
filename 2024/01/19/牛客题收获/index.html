@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020/5 | Welcome</title>
+  <title>牛客题收获 | Welcome</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Welcome">
-<meta property="og:url" content="http://yoursite.com/archives/2020/05/index.html">
+  <meta name="description" content="牛客题收获基础SQL语言共分为四大类：数据查询语言DQL，数据操纵语言DML，数据定义语言DDL，数据控制语言DCL。 1. 数据查询语言DQL数据查询语言DQL基本结构是由SELECT子句，FROM子句，WHERE子句组成的查询块：SELECT &lt;字段名表&gt;FROM &lt;表或视图名&gt;WHERE &lt;查询条件&gt; 执行顺序： 1.from     2.where">
+<meta property="og:type" content="article">
+<meta property="og:title" content="牛客题收获">
+<meta property="og:url" content="http://yoursite.com/2024/01/19/%E7%89%9B%E5%AE%A2%E9%A2%98%E6%94%B6%E8%8E%B7/index.html">
 <meta property="og:site_name" content="Welcome">
+<meta property="og:description" content="牛客题收获基础SQL语言共分为四大类：数据查询语言DQL，数据操纵语言DML，数据定义语言DDL，数据控制语言DCL。 1. 数据查询语言DQL数据查询语言DQL基本结构是由SELECT子句，FROM子句，WHERE子句组成的查询块：SELECT &lt;字段名表&gt;FROM &lt;表或视图名&gt;WHERE &lt;查询条件&gt; 执行顺序： 1.from     2.where">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-01-19T12:12:34.770Z">
+<meta property="article:modified_time" content="2023-04-18T11:08:43.240Z">
 <meta property="article:author" content="ZNing_B">
 <meta name="twitter:card" content="summary">
   
@@ -142,148 +146,274 @@ Content">ZNing_B</a></h1>
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-牛客题收获" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      牛客题收获
+    </h1>
+  
+
+        
+        <a href="/2024/01/19/%E7%89%9B%E5%AE%A2%E9%A2%98%E6%94%B6%E8%8E%B7/" class="archive-article-date">
+  	<time datetime="2024-01-19T12:12:34.770Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-01-19</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="牛客题收获"><a href="#牛客题收获" class="headerlink" title="牛客题收获"></a>牛客题收获</h2><h4 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h4><p>SQL语言共分为四大类：数据查询语言<strong>DQL</strong>，数据操纵语言<strong>DML</strong>，数据定义语言<strong>DDL</strong>，数据控制语言<strong>DCL</strong>。</p>
+<p><strong>1. 数据查询语言DQL</strong><br>数据查询语言DQL基本结构是由SELECT子句，FROM子句，WHERE子句组成的查询块：SELECT &lt;字段名表&gt;FROM &lt;表或视图名&gt;WHERE &lt;查询条件&gt;</p>
+<p>执行顺序：</p>
+<p>1.from     2.where     3.group by     4.having     5.select     6.order by     7.limit..</p>
+<p><strong>2 .数据操纵语言DML</strong><br>数据操纵语言==DML== 主要有三种形式：</p>
+<p>1) 插入：INSERT<br>2) 更新：UPDATE<br>3) 删除：DELETE</p>
+<p><strong>3. 数据定义语言DDL</strong><br>数据定义语言DDL用来创建数据库中的各种对象—–表、视图、索引、同义词、聚簇等如：CREATE TABLE / VIEW / INDEX / SYN / CLUSTER| 表 视图 索引 同义词 簇。DDL操作是隐性提交的！不能rollback</p>
+<p><strong>4. 数据控制语言DCL</strong><br>数据控制语言DCL用来授予或回收访问数据库的某种特权，并控制数据库操纵事务发生的时间及效果，对数据库实行监视等。如：</p>
+<p>1) GRANT：授权。<br>2) ROLLBACK [WORK] TO [SAVEPOINT]：回退到某一点。回滚—ROLLBACK回滚命令使数据库状态回到上次最后提交的状态。其格式为：SQL&gt;ROLLBACK;</p>
+<p><a href="">授予grant to ，回收revoke from</a></p>
+<p>3) COMMIT [WORK]：提交。在数据库的插入、删除和修改操作时，只有当事务在提交到数据库时才算完成。在事务提交前，只有操作数据库的这个人才能有权看到所做的事情，别人只有在最后提交完成后才可以看到。</p>
+<h4 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h4><ul>
+<li><p>delete 可以精确删除，只删除表的数据，不会删除结构。  </p>
+</li>
+<li><p>truncate 能删除表的数据，也能删除表的结构 </p>
+</li>
+<li><p>drop 完全删除表 </p>
+</li>
+</ul>
+<h4 id="联结"><a href="#联结" class="headerlink" title="联结"></a>联结</h4><ul>
+<li><p>Mysql(版本8.0.25)不支持full join</p>
+</li>
+<li><p>on中相同的key匹配上时会产生笛卡尔积</p>
+</li>
+<li><p>inner join会忽略null值，right/left join则不会忽略null值</p>
+</li>
+<li><p>左右联结</p>
+<ul>
+<li><p>下面就左联结和右联结进行详细区分：</p>
+<ol>
+<li>左联结（LEFT JOIN）：左联结检索两个表中的所有行，同时只返回在左表中存在的行和与右表中匹配的行。<strong>左联结总是包含左边的表中的所有行，即使没有任何匹配。</strong></li>
+</ol>
+<p>在下面的例子中，我们使用LEFT JOIN将两个表中的数据连接起来：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT *</span><br><span class="line">FROM table1</span><br><span class="line">LEFT JOIN table2</span><br><span class="line">ON table1.id &#x3D; table2.id;</span><br></pre></td></tr></table></figure>
+
+<p>在这个例子中，所有<strong>table1中的记录都将包括在内</strong>。如果table2中不存在相应的ID，则将返回NULL值。</p>
+<ol start="2">
+<li>右联结（RIGHT JOIN）：右联结与左联结相似，它返回右表中的所有行和与左表中匹配的行，如果左表中没有匹配项，则返回NULL。</li>
+</ol>
+<p>在下面的例子中，我们使用RIGHT JOIN将两个表中的数据连接起来：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT *</span><br><span class="line">FROM table1</span><br><span class="line">RIGHT JOIN table2</span><br><span class="line">ON table1.id &#x3D; table2.id;</span><br></pre></td></tr></table></figure>
+
+<p>与左联结不同，右联结总是包含右边的表中的所有行，即使没有任何匹配。</p>
+<p>简而言之，使用左联结和右联结在将两个表中的数据组合起来时有不同的重点。关于union all合并同类项能解释解释吗。选择左联结还是右联结，应该根据实际情况来确定。</p>
+</li>
+</ul>
+</li>
+<li><p>UNION 联结与  UNION ALL联结</p>
+<ul>
+<li>MySQL 中的 UNION 操作符会将多个 SELECT 语句的结果合并成一个结果集，但会自动去除重复的行。具体地说，当 UNION 合并两个或多个结果集时，会对结果集中的每一行进行比较，如果两行的值完全相同，则只保留其中的一行，其它重复的行都被过滤掉。</li>
+<li>UNION ALL 是将多个 SELECT 语句的结果合并成一个结果集的操作符。与 UNION 不同的是，UNION ALL 不会移除重复的行，即保留所有的行而不进行去重。因此，它可以用来合并同类项。</li>
+<li>在使用 UNION ALL 来模拟 FULL OUTER JOIN 的时候，我们应该非常注意 WHERE 子句的使用，确保只包含我们需要的记录，并且不会包含不存在的记录。</li>
+</ul>
+</li>
+</ul>
+<h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><ul>
+<li><p><code>SUBSTRING_INDEX</code> 是 MySQL 中一个常用的字符串函数，用于获取一个字符串中指定分隔符出现的次数之前或之后的子串。该函数的语法如下：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SUBSTRING_INDEX(str, delim, count)</span><br></pre></td></tr></table></figure>
+
+<p>其中：</p>
+<ul>
+<li><code>str</code>：要操作的字符串。</li>
+<li><code>delim</code>：分隔符。</li>
+<li><code>count</code>：需要返回的子串在被分隔符分隔后的位置。如果 <code>count</code> 为正数，则返回分隔符之前的子串，如果 <code>count</code> 为负数，则返回分隔符之后的子串。</li>
+</ul>
+<p>以下是一些示例：</p>
+<ul>
+<li><code>SELECT SUBSTRING_INDEX(&#39;www.mysql.com&#39;, &#39;.&#39;, 1);</code>，结果为 <code>&#39;www&#39;</code>，因为它是第一个 <code>.</code> 之前的子串。</li>
+<li><code>SELECT SUBSTRING_INDEX(&#39;www.mysql.com&#39;, &#39;.&#39;, 2);</code>，结果为 <code>&#39;www.mysql&#39;</code>，因为它是第二个 <code>.</code> 之前的子串。</li>
+<li><code>SELECT SUBSTRING_INDEX(&#39;www.mysql.com&#39;, &#39;.&#39;, -2);</code>，结果为 <code>&#39;mysql.com&#39;</code>，因为它是倒数第二个 <code>.</code> 之后的子串。</li>
+</ul>
+<p>需要注意的是，如果要获取到分隔符本身，还需要自行处理一下。例如，如果要获取第一个 <code>.</code> 之后的子串，可以使用以下查询：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> SUBSTRING_INDEX(<span class="string">'www.mysql.com'</span>, <span class="string">'.'</span>, <span class="number">-1</span>);</span><br></pre></td></tr></table></figure>
+
+<p>但如果要同时获取分隔符，可以使用以下查询：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">CONCAT</span>(<span class="string">'.'</span>, SUBSTRING_INDEX(<span class="string">'www.mysql.com'</span>, <span class="string">'.'</span>, <span class="number">-1</span>));</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>MySQL 中使用 REGEXP 来操作正则表达式的匹配。<strong>其中</strong></p>
+<ul>
+<li><p><strong>^ 该符号表示匹配输入字符串的开始位置；</strong>    </p>
+</li>
+<li><p><strong>$表示匹配输入字符串的末尾位置；</strong></p>
+</li>
+<li><p><strong>[…] 表示匹配所包含的任意一个字符；</strong></p>
+</li>
+<li><p><strong>[^…]表示不能匹配括号内的任意单个字符；</strong></p>
+</li>
+<li><p><strong>x|y 这条竖线表示匹配x 或匹配y。</strong></p>
+</li>
+</ul>
+</li>
+<li><p>通过<code>CHARINDEX</code>如果能够找到对应的字符串，则返回该字符串位置i（有效位置范围为1&lt;= i &lt;= length(input)），<strong>否则返回0</strong>。</p>
+<p>注意<strong><em>位置是从1开始\</em></strong>。</p>
+<p>基本语法如下：</p>
+<p><code>CHARINDEX ( expressionToFind , expressionToSearch [ , start_location ] )</code></p>
+<p>expressionToFind ：目标字符串，就是想要找到的字符串，最大长度为8000 。</p>
+<p>expressionToSearch ：用于被查找的字符串。</p>
+<p>start_location：开始查找的位置，为空时默认从第一位开始查找。</p>
+</li>
+</ul>
+<h4 id="游标"><a href="#游标" class="headerlink" title="游标"></a>游标</h4><p>游标是一种从包括多条数据记录的结果集中每次提取一条记录以便处理的机制，可以看做是查询结果的记录指针。</p>
+<ul>
+<li>游标允许定位在结果集的特定行；</li>
+<li>从结果集的当前位置检索一行或一部分行；</li>
+<li>支持对结果集中当前位置的行进行数据修改。</li>
+<li>为由其他用户对显示在结果集中的数据所做的更改提供不同级别的可见性支持</li>
+</ul>
+<h4 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h4><p>事务是最小的执行单位，不允许分割；<a href="">原子性</a></p>
+<p>执行事务前后，数据保持一致，对同一数据读取的结果相同；<a href="">一致性</a></p>
+<p>一个事务被提交后对数据库中数据的改变是持久的。<a href="">持久性</a></p>
+<p>并发访问数据库时，各并发事务之间数据库是独立的。<a href="">隔离性</a></p>
+<h4 id="锁"><a href="#锁" class="headerlink" title="锁"></a>锁</h4><ul>
+<li>==共享锁==  用于不更改或不更新数据的读取操作 ，如SELECT语句</li>
+<li>==更新锁==  用于可更新的资源中，防止当多个会话在读取、锁定以及随后可能进行的资源更换时发生常见形式的死锁</li>
+<li>==排它锁== 用于数据修改操作，确保不会同时对同一资源进行多重更新</li>
+<li>==架构锁==  在执行依赖于表架构的操作时使用</li>
+<li>A选项，用于不更改或不更新数据的读取操作，如SELECT语句；B选项，用于可更新的资源中，防止当多个会话在读取、锁定以及随后可能进行的资源更换时发生常见形式的死锁；D选项，在执行依赖于表架构的操作时使用。</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/27/Python-%E7%AC%AC%E4%B8%83%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-05-27T07:04:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-27</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/27/Python-%E7%AC%AC%E4%B8%83%E7%AB%A0/">Python 第七章</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学习记录</a>
-        		</li>
-      		
-		</ul>
-	</div>
+      
 
-          
-
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2024/01/19/%E7%89%9B%E5%AE%A2%E9%A2%98%E6%94%B6%E8%8E%B7/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/13/Python-%E7%AB%A0%E8%8A%82%E4%BD%9C%E4%B8%9A/" class="archive-article-date">
-  	<time datetime="2020-05-13T02:54:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-13</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2024/01/19/%E7%AE%80%E5%8E%86%E6%92%B0%E5%86%99%E6%96%87%E6%A1%A3/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          简历撰写文档
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/01/18/test/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">&#39;test&#39;</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/13/Python-%E7%AB%A0%E8%8A%82%E4%BD%9C%E4%B8%9A/">Python 章节作业</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">给弟弟们</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#牛客题收获"><span class="toc-number">1.</span> <span class="toc-text">牛客题收获</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#基础"><span class="toc-number">1.0.1.</span> <span class="toc-text">基础</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#删除"><span class="toc-number">1.0.2.</span> <span class="toc-text">删除</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#联结"><span class="toc-number">1.0.3.</span> <span class="toc-text">联结</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#函数"><span class="toc-number">1.0.4.</span> <span class="toc-text">函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#游标"><span class="toc-number">1.0.5.</span> <span class="toc-text">游标</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#事务"><span class="toc-number">1.0.6.</span> <span class="toc-text">事务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#锁"><span class="toc-number">1.0.7.</span> <span class="toc-text">锁</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/12/Python%E7%AC%AC%E5%85%AD%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-05-12T15:57:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/12/Python%E7%AC%AC%E5%85%AD%E7%AB%A0/">Python第六章</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学习记录</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -306,8 +436,8 @@ Content">ZNing_B</a></h1>
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
